@@ -1,13 +1,19 @@
 .side-drawer {
     height: 100%;
     background-color: white;
-    box-shadow: 2px 0px 5px rgba(rgba(16, 16, 16, 0.797), green, blue, alpha);
+    box-shadow: 1px 0px 7px rgba(rgba(16, 16, 16, 0.797), green, blue, alpha);
     position: fixed;
     top: 0;
     left: 0;
     width: 70%;
     max-width: 300px;
     z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+.side-drawer.open {
+    transform: translateX(0)
 }
 
 .side-drawer ul {   
@@ -29,4 +35,10 @@
     text-decoration: none;
     color: rgb(242, 38, 24);
     font-size: 1.3em;
+}
+
+@media screen and (min-width: 600px) {
+    .side-drawer {
+        display: none;
+    }
 }

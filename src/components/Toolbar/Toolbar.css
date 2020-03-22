@@ -48,3 +48,15 @@
 .toolbar__navigation-items a:active {
     color: rgb(242, 38, 24);
 }
+
+@media screen and (max-width: 600px) {
+    .toolbar__navigation-items {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .toobar__logo {
+        margin-left: 0;
+    }
+}

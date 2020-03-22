@@ -20,17 +20,15 @@ class App extends Component {
   };
 
   render() {
-    let sideDrawer;
     let backDrop;
 
     if (this.state.sideDrawerOpen) {
-      sideDrawer = <SideDrawer />;
       backDrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
       <div className="App">
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-        {sideDrawer}
+        <SideDrawer show={this.state.sideDrawerOpen}/>
         {backDrop}
         <main>
           <p>This is the page content</p>
