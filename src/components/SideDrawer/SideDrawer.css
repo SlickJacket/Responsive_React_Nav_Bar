@@ -1,0 +1,32 @@
+.side-drawer {
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0px 5px rgba(rgba(16, 16, 16, 0.797), green, blue, alpha);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    max-width: 300px;
+    z-index: 200;
+}
+
+.side-drawer ul {   
+    width: 210px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-drawer li {
+    background-color: rgb(233, 233, 233);
+    border-radius: 5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.side-drawer ul a {
+    text-decoration: none;
+    color: rgb(242, 38, 24);
+    font-size: 1.3em;
+}

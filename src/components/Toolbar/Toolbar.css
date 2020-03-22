@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px;
+    height: 70px;
     background-color: rgb(176, 170, 170);
 }
 
@@ -21,7 +21,7 @@
 .toobar__logo a {
     text-decoration: none;
     color: white;
-    font-size: 3em;
+    font-size: 2.3em;
 }
 
 .spacer {
